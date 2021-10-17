@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.clearfix:before,
+	.clearfix:after {
+					    content: "";
+					    display: block;
+					    clear: both;
+					    visibility: hidden;
+					    line-height: 0;
+					    height: 0;
+					    font-size:0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+@font-face{
+    font-family: 'font1'; 
+    src: url(../images/fonts/xrxw3i6li01bkofansskzg.ttf);
+}
+
+.container{
+    width: 1170px;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+ul,li{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+
+
+
+/* section-service部分................... */
+.section-service{
+    background-image: url(../images/img/parallax-5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+.service-title{
+    height: 90px;
+    text-align: center;
+}
+.service-title h1{
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: font1;
+}
+.service-title ul{
+    padding-left: 0;
+}
+.service-title ul li{
+    display: inline-block;
+}
+.service-title ul li:first-child:after{
+    content:"/";
+    margin: 0 5px;
+}
+.service-title ul li a,.service-title ul li:after{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    font-family: font1;
+}
+.service-title ul li a:hover{
+    color: #18ba60;
+}
+
+/* service-content.................... */
+
+.service-content{
+    padding: 100px 0;
+    background-color: #fff;
+
+    
+}
+.service-list{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.service-list ul li{
+    list-style-type: none;
+    display: block;
+    background: #f9f9f9;
+}
+.service-list ul li a{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3b3b3b;
+    padding: 15px 30px;
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+}
+
+.service-list ul li a i{
+    margin-right: 15px;
+}
+.active-list a{
+    background: #18ba60!important;
+    color: #fff!important;
+}
+.service-list ul li:hover a,.service-brounch ul li:hover a{
+    background: #18ba60!important;
+    color: #fff!important;
+}
+.service-list ul li:hover a span{
+    transition: padding-left .3s linear;
+}
+.service-list ul li:hover a span{
+    padding-left: 10px;
+}
+
+.service-list ul li a::before{
+    padding-right: 20px;
+    transition-duration: .5s;
+}
+.service-contact{
+    background: #3b526b;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 15px;
+}
+.service-contact h4{
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+}
+.service-contact p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 15px;
+}
+.service-contact h6{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 15px;
+}
+.service-brounch{
+    background: #fff;
+    margin-top: 40px;
+}
+.service-brounch ul li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.service-brounch ul li a{
+    display: block;
+    color: #3b3b3b;
+    font-size: 15px;
+    font-weight: 600;
+    background: #fff;
+    border-radius: 10px;
+    border: 1.5px solid #efefef;
+    padding: 15px;
+    text-decoration: none;
+}
+.service-brounch ul li a i{
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+/* service-content下................. */
+.service-ig{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.detail-heading h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: #3b3b3b;
+    text-align: left;
+    margin: 40px 0 10px;
+}
+.detail-heading h3:after{
+    display: block;
+    content: "";
+    width: 50%;
+    border-bottom: 2px solid #efefef;
+    margin: 10px 0 15px;
+
+}
+.service-content-text p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #909090;
+    line-height: 180%;
+    margin: 0 0 10px;
+}
+.smart-box{
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.smart-box-icon{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 15px;
+}
+.icon-price-ticket::before{
+    content: "/ea3a";
+}
+.smart-box-icon i{
+    font-size: 38px;
+    color: #18ba60;
+}
+.smart-box-content{
+    float: right;
+    width: 75%;
+}
+.smart-box-content h5{
+    font-family: font1;
+    font-size: 17px;
+    font-weight: 600;
+    color: #3b3b3b;
+    margin-bottom: 5px;
+}
+
+.smart-box-content p{
+    font-family: font1;
+    font-size: 15px;
+    font-weight: 500;
+    color: #909090;
+    margin-bottom: 0;
+}
+
+.smart-box-content h5,.smart-box-content p{
+    margin-left: 15px;
+    line-height: 180%;
+}
+.services-text-content{
+    padding-left: 20px;
+}
+.services-text-content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #909090;
+    line-height: 180%;
+}
+
+.special-services-wrap{
+    position: relative;
+}
+.special-services-wrap{
+    text-align: left;
+}
+.special-menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tab-menu{
+    padding: 0 15px 10px 0;
+}
+.special-menu li{
+    display: inline-block;
+    background: 0 0;
+    margin-right: 20px;
+}
+.special-menu li a{
+    font-family: font1;
+    color: #3b3b3b;
+    display: block;
+    font-size: 16px;
+    border-bottom: 1.5px solid #eee;
+    font-weight: 600;
+    padding: 10px 3px;
+    text-decoration: none;
+}
+.active-tab a{
+    color: #18ba60!important;
+    border-bottom: 1.5px solid #18ba60!important;
+}
+.special-services-text{
+    position: absolute;
+    display: none;
+    
+     opacity: 0;
+    transition: all 1s;
+}
+.special-services-text img{
+    width: 100%;
+    border-radius: 10px;
+}
+.active-s{
+    display: block; 
+    opacity: 1;
+}
+.section-photodune{
+    padding: 40px 0;
+    background: #f9f9f9;
+    margin-top: 220px;
+}
+
+.header-bottom .header-bottom-nav .service a{
+    color: #18ba60;
+}
+.header-bottom .header-bottom-nav .service a:hover{
+    color: #fff;
+    background-color: #18ba60;
+}

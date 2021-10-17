@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.clearfix:before,
+	.clearfix:after {
+					    content: "";
+					    display: block;
+					    clear: both;
+					    visibility: hidden;
+					    line-height: 0;
+					    height: 0;
+					    font-size:0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+@font-face{
+    font-family: 'font1'; 
+    src: url(../images/fonts/xrxw3i6li01bkofansskzg.ttf);
+}
+
+.container{
+    width: 1170px;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+ul,li{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+
+
+/* section-pricing部分................... */
+
+.section-pricing{
+    background-image: url(../images/img/parallax-5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+.pricing-title{
+    height: 90px;
+    text-align: center;
+}
+.pricing-title h1{
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: font1;
+}
+.pricing-title ul{
+    padding-left: 0;
+}
+.pricing-title ul li{
+    display: inline-block;
+}
+.pricing-title ul li:first-child:after{
+    content:"/";
+    margin: 0 5px;
+}
+.pricing-title ul li a,.pricing-title ul li:after{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    font-family: font1;
+}
+.pricing-title ul li a:hover{
+    color: #18ba60;
+}
+
+/* section-basic部分....................... */
+.section-basic{
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.basic{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px 0;
+    overflow: hidden;
+}
+.basic-add-box{
+    padding: 30px;
+}
+.basic-add h4{
+    font-family: font1;
+    font-size: 25px;
+    font-weight: 500;
+    color: #3b3b3b;
+}
+.basic-add h2{
+    font-family: font1;
+    font-size: 35px;
+    font-weight: 500;
+    color: #3b3b3b;
+    margin-top: 15px;
+}
+.basic-add p{
+    font-size: 15px;
+    color: #676767;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+.basic-add-content{
+    border-top: 1px solid #e6e6e6;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.basic-add-content p i{
+    color: #18ba60;
+    font-size: 15px;
+    font-weight: 700;
+}
+.basic-add-content p span{
+    color: #676767;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.basic-button a{
+    font-family: font1;
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 15px;
+    background: #18ba60;
+    text-decoration: none;
+    margin-right: 5px;
+    transition-duration: .3s;
+    text-align: center;
+}
+.basic-button a:hover{
+    background-color: #314255;
+}
+
+.section-photodune{
+    background-color: #f9f9f9;
+}
+
+/* header-bottom about... */
+.header-bottom .header-bottom-nav .pricing a{
+    color: #18ba60;
+}
+.header-bottom .header-bottom-nav .pricing a:hover{
+    color: #fff;
+    background-color: #18ba60;
+}
